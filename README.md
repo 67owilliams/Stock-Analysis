@@ -17,27 +17,24 @@ Some pros of refactoring code is to reduce the time it takes for the script to r
 ###### Original vs. Refactored VBA Script
 In the original code the variables startTime and endTimes were initiated as the Double type. 
 The same for startingPrice and endingPrice that were set as Double creating larger values to be returned as results.
+
 '''
-Ln3, Col5
 Dim StartTime As Double
 Dim EndTime As Double
 '''
 
 '''
-Ln34, Col5
 Dim StartingPrice As Double
 Dim EndingPrice As Double
 '''
 To cut down a bit on the time it takes to run the refactored code both startTime and endTime are initialised as the Single type. Also the data to be returned in the "All Stocks Analysis" worksheet are stored in arrays initialised as the Long, and single types.
 
 '''
-Ln3, Col5
 Dim StartTime As Single
 Dim EndTime As Single
 '''
 
 '''
-Ln48, Col5
 Dim tickerVolumes(12) As Long
 Dim tickerStartingPrices(12) As Single
 Dim tickerEndingPrices(12) As Single
